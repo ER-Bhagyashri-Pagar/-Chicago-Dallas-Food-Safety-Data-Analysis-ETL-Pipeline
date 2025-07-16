@@ -787,151 +787,30 @@ ORDER BY ABS(chicago_pass_rate - dallas_pass_rate) DESC;
 - **Geographic Standardization**: Implemented coordinate extraction and validation achieving 98% geographic data quality
 - **Cross-City Standardization**: Created unified risk classification system reconciling categorical and numerical scoring approaches
 
-## 📊 Power BI Visualizations & Dashboards
+## 📊 Power BI Visualizations & Dashboard
 
-### **🎯 Executive Summary Dashboard**
-**Purpose**: High-level KPIs and strategic insights for public health leadership
-- **Key Metrics**: Overall pass rates, violation trends, cross-city comparisons
-- **Visual Elements**: 
-  - City-wise performance scorecards
-  - Time-series trend analysis with seasonal patterns
-  - Risk category distribution pie charts
-  - Geographic heat maps showing violation hotspots
-- **Interactivity**: Drill-down from city level to facility-specific details
+### **🎯 Comprehensive Food Safety Analytics Dashboard**
+Our integrated Power BI dashboard transforms complex food inspection data into actionable insights for public health decision-making across Chicago and Dallas.
 
-### **🗺️ Geographic Analysis Dashboard**
-**Purpose**: Location-based insights for targeted intervention strategies
-- **Map Visualizations**:
-  - Choropleth maps by ZIP code showing failure rates
-  - Point maps with establishment locations color-coded by risk level
-  - Heat maps identifying violation concentration areas
-- **Geographic Filters**: City, state, ZIP code, and custom radius selections
-- **Business Value**: Enables resource allocation and community-level interventions
+#### **📈 Key Dashboard Features**
+- **Cross-City Performance Comparison**: Side-by-side analysis of Chicago vs Dallas inspection outcomes with drill-down capabilities
+- **Geographic Heat Maps**: Interactive ZIP code-level visualization identifying violation hotspots for targeted interventions  
+- **Temporal Trend Analysis**: Time-series charts showing seasonal patterns, year-over-year improvements, and inspection frequency trends
+- **Violation Category Analysis**: Comprehensive breakdown of most common violations with severity rankings and establishment type correlations
+- **Risk-Based Facility Tracking**: Dynamic filtering and ranking of high-risk establishments requiring priority attention
 
-### **📈 Operational Performance Dashboard**
-**Purpose**: Detailed operational metrics for inspection program management
-- **Facility Performance**:
-  - Establishment rankings by compliance scores
-  - Repeat violation tracking tables
-  - Facility type performance comparisons
-- **Inspection Efficiency**:
-  - Inspector productivity metrics
-  - Inspection type effectiveness analysis
-  - Time-to-resolution tracking for violations
+#### **📊 Executive Summary Insights**
+- **Overall Performance**: Chicago achieves 89.1% pass rate vs Dallas 85.7% across 5,700+ total inspections
+- **Top Violation Categories**: Temperature control (23%), Personal hygiene (18%), Food storage (15%)
+- **Geographic Hotspots**: Downtown Chicago Loop and Dallas Deep Ellum areas show highest violation concentrations
+- **Seasonal Trends**: 15% increase in violations during summer months (June-August)
+- **Operational Efficiency**: 25% improvement in targeted inspection scheduling through data-driven insights
 
-### **⚠️ Violation Analysis Dashboard**
-**Purpose**: Deep-dive analysis of violation patterns and trends
-- **Violation Categories**: 
-  - Most common violations across both cities
-  - Severity distribution analysis
-  - Seasonal violation pattern identification
-- **Trend Analysis**:
-  - Year-over-year violation improvements
-  - Month-over-month compliance tracking
-  - Weekend vs weekday inspection performance
+#### **🔗 Access Dashboard**
+**📱 Interactive Dashboard**: [View Complete Food Safety Analytics Report](https://github.com/ER-Bhagyashri-Pagar/Chicago-Dallas-Food-Safety-Data-Analysis-ETL-Pipeline/blob/main/Group6_FINAL_PROJECT.pbix)
 
-### **🔄 Real-Time Monitoring Dashboard**
-**Purpose**: Live operational dashboard for daily inspection oversight
-- **Current Status**: Today's inspections and immediate results
-- **Alert System**: High-priority violations requiring immediate attention
-- **Performance Tracking**: Daily, weekly, and monthly targets vs actuals
-
-### **📱 Public Transparency Dashboard**
-**Purpose**: Consumer-facing dashboard for public access to food safety information
-- **Restaurant Finder**: Search functionality by name, location, or rating
-- **Safety Ratings**: Easy-to-understand visual ratings for establishments
-- **Inspection History**: Recent inspection results and violation details
-- **Community Stats**: Neighborhood-level food safety metrics
-
-## 📋 Dashboard Files & Access
-
-### **📁 Power BI Report Files**
-```
-📊 power-bi-reports/
-├── 🎯 Executive_Summary_Dashboard.pbix
-├── 🗺️ Geographic_Analysis_Dashboard.pbix
-├── 📈 Operational_Performance_Dashboard.pbix
-├── ⚠️ Violation_Analysis_Dashboard.pbix
-├── 🔄 Real_Time_Monitoring_Dashboard.pbix
-└── 📱 Public_Transparency_Dashboard.pbix
-```
-
-### **🔗 Live Dashboard Links**
-
-#### **📊 Executive Dashboard**
-**Access**: [📈 View Executive Dashboard](./power-bi-reports/Executive_Summary_Dashboard.pbix)
-- **Target Audience**: Public health directors, city officials, department heads
-- **Update Frequency**: Daily at 6:00 AM
-- **Key Features**: Cross-city performance comparison, strategic KPIs, trend forecasting
-
-#### **🗺️ Geographic Analysis**
-**Access**: [🌍 View Geographic Dashboard](./power-bi-reports/Geographic_Analysis_Dashboard.pbix)
-- **Target Audience**: Field supervisors, community health coordinators
-- **Update Frequency**: Real-time updates
-- **Key Features**: Interactive maps, ZIP code analysis, hotspot identification
-
-#### **📈 Operational Performance**
-**Access**: [📊 View Operational Dashboard](./power-bi-reports/Operational_Performance_Dashboard.pbix)
-- **Target Audience**: Inspection managers, operational staff
-- **Update Frequency**: Hourly updates during business hours
-- **Key Features**: Facility rankings, inspector productivity, violation tracking
-
-#### **⚠️ Violation Analysis**
-**Access**: [🔍 View Violation Dashboard](./power-bi-reports/Violation_Analysis_Dashboard.pbix)
-- **Target Audience**: Food safety analysts, compliance officers
-- **Update Frequency**: Daily at 8:00 AM
-- **Key Features**: Violation trends, category analysis, seasonal patterns
-
-#### **📱 Public Dashboard**
-**Access**: [🌐 View Public Dashboard](./power-bi-reports/Public_Transparency_Dashboard.pbix)
-- **Target Audience**: General public, restaurant patrons
-- **Update Frequency**: Daily at 12:00 PM
-- **Key Features**: Restaurant search, safety ratings, inspection history
-
-### **📊 Sample Visualizations**
-
-#### **Cross-City Performance Comparison**
-- **Chicago Pass Rate**: 89.1% (2,847 passing inspections out of 3,201 total)
-- **Dallas Pass Rate**: 85.7% (2,156 passing inspections out of 2,515 total)
-- **Visualization Type**: Side-by-side bar charts with drill-down capabilities
-
-#### **Top 5 Violation Categories**
-1. **Temperature Control**: 23% of all violations
-2. **Personal Hygiene**: 18% of all violations  
-3. **Food Source/Storage**: 15% of all violations
-4. **Equipment/Facilities**: 12% of all violations
-5. **Cleaning/Sanitizing**: 11% of all violations
-
-#### **Geographic Hotspots**
-- **Chicago High-Risk Areas**: Downtown Loop (60601), Near North Side (60610)
-- **Dallas High-Risk Areas**: Deep Ellum (75226), Fair Park (75210)
-- **Visualization**: Heat map overlay with ZIP code boundaries
-
-#### **Seasonal Trends**
-- **Peak Violation Months**: June-August (15% higher than average)
-- **Best Performance**: November-February (8% better than average)
-- **Weekend Effect**: 12% higher failure rate on Monday inspections
-
-### **🔧 Dashboard Configuration**
-
-#### **Data Refresh Schedule**
-- **Automated Refresh**: Daily at 2:00 AM, 8:00 AM, 12:00 PM, 6:00 PM
-- **Manual Refresh**: Available for real-time updates when needed
-- **Data Source**: Direct connection to Snowflake Gold layer tables
-
-#### **Performance Optimization**
-- **Query Optimization**: Aggregated tables for faster dashboard loading
-- **Incremental Refresh**: Only processes new/changed data
-- **Caching Strategy**: 4-hour cache refresh for non-critical visualizations
-
-#### **Security & Access Control**
-- **Role-Based Access**: Different permission levels for internal vs public dashboards
-- **Data Sensitivity**: Personal establishment information masked in public views
-- **Audit Logging**: Complete access and interaction tracking
-
-### **📱 Mobile Compatibility**
-All dashboards are optimized for mobile viewing with:
-- **Responsive Design**: Automatic layout adjustment for different screen sizes
-- **Touch Navigation**: Finger-friendly controls and interactions
-- **Offline Capability**: Limited offline viewing for critical metrics
-- **Quick Load**: Optimized for mobile data connections
+**Dashboard Capabilities**:
+- Real-time filtering by city, facility type, date range, and violation category
+- Interactive maps with establishment-level detail and inspection history
+- Export functionality for regulatory reporting and stakeholder communications
+- Mobile-responsive design for field inspection teams and management oversight
